@@ -37,10 +37,6 @@
 
 ### 1. Género:
 ### Se calculó la frecuencia de cada género en el conjunto de datos y, a partir de ello, la probabilidad de cada clase (género) dividiendo su frecuencia entre el total de canciones.
-### Con estas probabilidades, se aplicó la fórmula de entropía de Shannon: 
-![Formula Entropia](https://scontent.fcun1-1.fna.fbcdn.net/v/t1.6435-9/41222078_2006427969424221_485605469390372864_n.png?_nc_cat=109&ccb=1-7&_nc_sid=f798df&_nc_eui2=AeFT4Di-lWvtkEWW0OkzaG40sGLwAltjmQiwYvACW2OZCIvtea0g4mB80jAo_TiANlLISk5OwBIedRs1Od8WwP_k&_nc_ohc=ObHcWAeYQjQQ7kNvgFelF9X&_nc_zt=23&_nc_ht=scontent.fcun1-1.fna&_nc_gid=A3vgGn2bv88qgDCeR3RyBVy&oh=00_AYDbUmyRjXuFoa6iJiWodDQjQBLVTrSqhxKlAP4umK-amQ&oe=67366183)
-
-###  donde p(x) representa la probabilidad de cada clase. Para evitar errores matemáticos al calcular el logaritmo de cero (lo cual no está definido), se añadió un ajuste de 1𝑒−10 a las probabilidades. Este pequeño ajuste asegura que todas las probabilidades sean mayores que cero, evitando problemas de indefinición en el cálculo de la entropía.
 
 ### 2. Bailabilidad:
 ### De igual manera, se calculó la frecuencia de cada nivel de bailabilidad y luego su probabilidad relativa.
@@ -50,17 +46,26 @@
 ### Se analizó la frecuencia de cada valor de BPM en el conjunto de datos y se calculó la probabilidad de ocurrencia de cada uno.
 ### Posteriormente, se aplicó la fórmula de entropía para evaluar la variabilidad y distribución de esta métrica.
 
-## Resultados
+### Con estas probabilidades, se aplicó la fórmula de entropía de Shannon: 
+![Formula Entropia](https://scontent.fcun1-1.fna.fbcdn.net/v/t1.6435-9/41222078_2006427969424221_485605469390372864_n.png?_nc_cat=109&ccb=1-7&_nc_sid=f798df&_nc_eui2=AeFT4Di-lWvtkEWW0OkzaG40sGLwAltjmQiwYvACW2OZCIvtea0g4mB80jAo_TiANlLISk5OwBIedRs1Od8WwP_k&_nc_ohc=ObHcWAeYQjQQ7kNvgFelF9X&_nc_zt=23&_nc_ht=scontent.fcun1-1.fna&_nc_gid=A3vgGn2bv88qgDCeR3RyBVy&oh=00_AYDbUmyRjXuFoa6iJiWodDQjQBLVTrSqhxKlAP4umK-amQ&oe=67366183)
 
-### Entropía del Género: La entropía calculada para el género fue de 4.03. Esto indica que existe una variedad considerable de géneros en el conjunto de datos, lo cual muestra diversidad en las preferencias musicales representadas.
+###  donde p(x) representa la probabilidad de cada clase. 
+
+
+## Resultados
+### Cuando calculamos la entropía, para evitar errores matemáticos al calcular el logaritmo de cero (lo cual no está definido), se añadió un ajuste de 1𝑒−10 a las probabilidades, este pequeño ajuste asegura que todas las probabilidades sean mayores que cero, evitando problemas de indefinición en el cálculo.
+
+### Entropía del Género: Se calculó la frecuencia de cada género y su probabilidad dividiendo la frecuencia entre el total de canciones, la entropía calculada para los géneros fue de 4.03, lo que indica una variedad considerable en los géneros musicales, reflejando la diversidad en las preferencias musicales representadas.
+
+### Entropía de Bailabilidad: De forma similar, se calculó la frecuencia de cada nivel de bailabilidad y luego su probabilidad relativa, la entropía de bailabilidad resultó en 4.72, lo que refleja una alta variabilidad en los niveles de bailabilidad, sugiriendo una amplia gama de canciones en términos de "bailabilidad".
   
-### Entropía de Bailabilidad: La entropía calculada para bailabilidad fue de 4.72, lo cual refleja una alta variabilidad en los niveles de bailabilidad de las canciones. Esto sugiere que hay una diversidad de canciones en cuanto a su potencial de ser "bailables".
-  
-### Entropía de Beats por Minuto (BPM): Con una entropía de 4.74, el BPM muestra una distribución amplia de ritmos. Esto indica que el conjunto de canciones tiene una variación considerable en términos de tempo, lo cual puede atraer a una audiencia con diferentes gustos.
+### Entropía de Beats por Minuto (BPM): Se calculó la frecuencia de cada valor de BPM y se determinó la probabilidad de ocurrencia, la entropía de BPM fue de 4.74,  Esto indica que el conjunto de canciones tiene una variación considerable en términos de tempo, mostrando una distribución amplia en los ritmos de las canciones, lo cual puede ser atractivo para audiencias con diferentes gustos.
 
 ## Conclusiones
 
 ### El análisis de entropía aplicado al conjunto de datos muestra que existe una gran diversidad tanto en los géneros, los niveles de bailabilidad y los BPM de las canciones analizadas. La alta entropía en las variables clave sugiere que las canciones en el conjunto no se concentran en una categoría específica, sino que presentan una variedad de características musicales que podrían interesar a una amplia audiencia. Esta variabilidad, medida a través de la entropía, es esencial para comprender la amplitud de opciones dentro del Top 50 de Spotify y puede ser útil en la personalización de listas de reproducción para adaptarse a distintos gustos y contextos musicales.
+### Además, una alta entropía indica que el conjunto de canciones ofrece algo para todos, desde aquellos que buscan música enérgica y animada hasta quienes prefieren un ritmo más lento o géneros alternativos, tiene la capacidad de capturar esta diversidad no solo enriquece la experiencia del usuario, sino que también proporciona información valiosa para la industria musical y el desarrollo de algoritmos de recomendación. Por ejemplo, conocer la distribución amplia en géneros y BPM permite crear recomendaciones más precisas y listas de reproducción que mejoran la retención de los usuarios al ofrecer una selección variada. La alta entropía en estos aspectos también puede servir como un indicador del éxito comercial, al reflejar la popularidad de canciones con características diversas, lo que sugiere un mercado con intereses musicales amplios y en constante evolución.
+
 
 
 
