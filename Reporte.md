@@ -40,7 +40,7 @@
 ### Con estas probabilidades, se aplicó la fórmula de entropía de Shannon: 
 ![Formula Entropia](https://scontent.fcun1-1.fna.fbcdn.net/v/t1.6435-9/41222078_2006427969424221_485605469390372864_n.png?_nc_cat=109&ccb=1-7&_nc_sid=f798df&_nc_eui2=AeFT4Di-lWvtkEWW0OkzaG40sGLwAltjmQiwYvACW2OZCIvtea0g4mB80jAo_TiANlLISk5OwBIedRs1Od8WwP_k&_nc_ohc=ObHcWAeYQjQQ7kNvgFelF9X&_nc_zt=23&_nc_ht=scontent.fcun1-1.fna&_nc_gid=A3vgGn2bv88qgDCeR3RyBVy&oh=00_AYDbUmyRjXuFoa6iJiWodDQjQBLVTrSqhxKlAP4umK-amQ&oe=67366183)
 
-###   donde px representa la probabilidad de cada género.
+###  donde p(x) representa la probabilidad de cada clase. Para evitar errores matemáticos al calcular el logaritmo de cero (lo cual no está definido), se añadió un ajuste de 1𝑒−10 a las probabilidades. Este pequeño ajuste asegura que todas las probabilidades sean mayores que cero, evitando problemas de indefinición en el cálculo de la entropía.
 
 ### 2. Bailabilidad:
 ### De igual manera, se calculó la frecuencia de cada nivel de bailabilidad y luego su probabilidad relativa.
