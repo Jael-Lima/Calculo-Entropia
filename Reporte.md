@@ -31,6 +31,32 @@
 ### 1. Género:
 ### Se calculó la frecuencia de cada género en el conjunto de datos y, a partir de ello, la probabilidad de cada clase (género) dividiendo su frecuencia entre el total de canciones.
 ### Con estas probabilidades, se aplicó la fórmula de entropía de Shannon: 
-!entropia [https://scontent.fcun1-1.fna.fbcdn.net/v/t1.6435-9/41222078_2006427969424221_485605469390372864_n.png?_nc_cat=109&ccb=1-7&_nc_sid=f798df&_nc_eui2=AeFT4Di-lWvtkEWW0OkzaG40sGLwAltjmQiwYvACW2OZCIvtea0g4mB80jAo_TiANlLISk5OwBIedRs1Od8WwP_k&_nc_ohc=ObHcWAeYQjQQ7kNvgFelF9X&_nc_zt=23&_nc_ht=scontent.fcun1-1.fna&_nc_gid=A3vgGn2bv88qgDCeR3RyBVy&oh=00_AYDbUmyRjXuFoa6iJiWodDQjQBLVTrSqhxKlAP4umK-amQ&oe=67366183]
+![Formula Entropia](https://scontent.fcun1-1.fna.fbcdn.net/v/t1.6435-9/41222078_2006427969424221_485605469390372864_n.png?_nc_cat=109&ccb=1-7&_nc_sid=f798df&_nc_eui2=AeFT4Di-lWvtkEWW0OkzaG40sGLwAltjmQiwYvACW2OZCIvtea0g4mB80jAo_TiANlLISk5OwBIedRs1Od8WwP_k&_nc_ohc=ObHcWAeYQjQQ7kNvgFelF9X&_nc_zt=23&_nc_ht=scontent.fcun1-1.fna&_nc_gid=A3vgGn2bv88qgDCeR3RyBVy&oh=00_AYDbUmyRjXuFoa6iJiWodDQjQBLVTrSqhxKlAP4umK-amQ&oe=67366183)
+
+###   donde px representa la probabilidad de cada género.
+
+### 2. Bailabilidad:
+### De igual manera, se calculó la frecuencia de cada nivel de bailabilidad y luego su probabilidad relativa.
+### Con las probabilidades obtenidas, se calculó la entropía utilizando la misma fórmula para estimar la dispersión y diversidad de los niveles de bailabilidad.
+
+### 3. Beats por Minuto (BPM):
+### Se analizó la frecuencia de cada valor de BPM en el conjunto de datos y se calculó la probabilidad de ocurrencia de cada uno.
+### Posteriormente, se aplicó la fórmula de entropía para evaluar la variabilidad y distribución de esta métrica.
+
+## Resultados
+
+### Entropía del Género: La entropía calculada para el género fue de 4.03. Esto indica que existe una variedad considerable de géneros en el conjunto de datos, lo cual muestra diversidad en las preferencias musicales representadas.
+  
+### Entropía de Bailabilidad: La entropía calculada para bailabilidad fue de 4.72, lo cual refleja una alta variabilidad en los niveles de bailabilidad de las canciones. Esto sugiere que hay una diversidad de canciones en cuanto a su potencial de ser "bailables".
+  
+### Entropía de Beats por Minuto (BPM): Con una entropía de 4.74, el BPM muestra una distribución amplia de ritmos. Esto indica que el conjunto de canciones tiene una variación considerable en términos de tempo, lo cual puede atraer a una audiencia con diferentes gustos.
+
+## Conclusiones
+
+### El análisis de entropía aplicado al conjunto de datos muestra que existe una gran diversidad tanto en los géneros, los niveles de bailabilidad y los BPM de las canciones analizadas. La alta entropía en las variables clave sugiere que las canciones en el conjunto no se concentran en una categoría específica, sino que presentan una variedad de características musicales que podrían interesar a una amplia audiencia. Esta variabilidad, medida a través de la entropía, es esencial para comprender la amplitud de opciones dentro del Top 50 de Spotify y puede ser útil en la personalización de listas de reproducción para adaptarse a distintos gustos y contextos musicales.
 
 
+
+## Referencias 
+### Serrano, L. (2018, 26 octubre). Shannon Entropy, Information Gain, and Picking Balls from Buckets. Medium. https://medium.com/udacity/shannon-entropy-information-gain-and-picking-balls-from-buckets-5810d35d54b4 
+### Hottest Spotify Hits. (2023).  Most Streamed Spotify Songs 2023 https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
