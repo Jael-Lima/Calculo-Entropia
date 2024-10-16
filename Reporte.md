@@ -1,5 +1,12 @@
 # Calculo-Entropia
 
+
+## Equipo:
+### Freda Maria Perez Novelo
+### Brisa Jael Lima Arenas
+
+
+
 ## Introducción
 
 ### Este trabajo tiene como objetivo desarrollar un programa que permita analizar un conjunto de datos mediante el cálculo de probabilidades de clases y entropía. La entropía mide el grado de incertidumbre en un sistema, siendo una herramienta esencial para la compresión y clasificación de datos, en la teoría de la información. A través de este cálculo,  se busca identificar las clases de un conjunto de datos, calcular sus probabilidades y determinar la entropía del sistema, proporcionando una perspectiva cuantitativa sobre la diversidad o el orden en los datos.
